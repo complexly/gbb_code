@@ -21,9 +21,11 @@ Typical install time on a normal desktop: 10–25 minutes (most time is Python w
 
 ## Quickstart (demo)
 
-A tiny demo dataset is in `sampledata/`, which are not real patents but generated data of similar structure.
+Open notebooks to see the processing codes and results on whole datset.
 
-Open notebooks and run in order. Paths are now configured via an auto-inserted setup cell. You can also set an environment variable to relocate the project:
+A tiny demo dataset is in `sampledata/`, which are not the whole data used but a few sampled rows to show the structure. Execution of notebooks on these data will not get the same results.
+
+Paths are now configured via an auto-inserted setup cell. You can also set an environment variable to relocate the project:
 
 ```bash
 export GBB_PROJECT_ROOT=/path/to/this/repo
