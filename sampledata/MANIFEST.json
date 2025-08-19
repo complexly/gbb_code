@@ -1,0 +1,41 @@
+{
+  "data/patvecdf.csv": {
+    "patent_id": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005"
+    ],
+    "docdb_family_id": [
+      101,
+      102,
+      103,
+      201,
+      202
+    ]
+  },
+  "patstat/tls225.csv": {
+    "docdb_family_id": [
+      101,
+      102,
+      103,
+      201,
+      202
+    ],
+    "cpc4d": [
+      "Y02A",
+      "Y04B",
+      "Y02E",
+      "H01M",
+      "G06F"
+    ]
+  },
+  "patent_text/fse_embedding/title_abstract_embedding.npy": {
+    "shape": [
+      6,
+      8
+    ],
+    "dtype": "float32"
+  }
+}
