@@ -17,26 +17,21 @@ conda install r=4.4.3 r-irkernel
 pip install -r requirements.txt
 ```
 
-Typical install time on a normal desktop: 10–25 minutes (most time is Python wheel downloads; nmslib may compile on some platforms; Windows+WSL2 is faster/more reliable).
+Typical install time on a normal desktop: 10–25 minutes (most time is Python wheel downloads; nmslib may compile on some platforms).
 
 ## Quickstart (demo)
 
 A tiny demo dataset is in `sampledata/`, which are not real patents but generated data of similar structure.
 
-```
-sampledata/
-├── data/patvecdf.csv
-├── patstat/tls225.csv
-└── patent_text/fse_embedding/title_abstract_embedding.npy
-```
-
-Open `1_ccmt_matching.ipynb` and run. Paths are now configured via an auto-inserted setup cell. You can also set an environment variable to relocate the project:
+Open notebooks and run in order. Paths are now configured via an auto-inserted setup cell. You can also set an environment variable to relocate the project:
 
 ```bash
 export GBB_PROJECT_ROOT=/path/to/this/repo
 ```
 
 ## Typical workflow
+
+A download of Patentsview dataset and PATSTAT (license needed) is necessary, and the raw data is recommended to store in Parquet files for faster loading.
 
 Run in order:
 `0_get_familiy_id.ipynb → 1_ccmt_matching.ipynb → 2_cpc.ipynb → 3.1_cluster_GBB.ipynb → 3.2_cluster_sourcefields.ipynb → 3.3_name_clusters.ipynb → 4_assocition_source_gbb.ipynb → 5.1_firm_agg.ipynb → 5.2_data4reg.ipynb → 5.3_entry_reg_R.ipynb (R) → 5.4_marginplot_stata.ipynb (Stata) → 6_viz_firm_cities.ipynb → 7.1_firm_primary_ctry.ipynb → 7.2_complement_firm_ctry.ipynb → 7.3_complement_reg_R.ipynb (R) → 7.4_fig_complement.ipynb`
@@ -46,6 +41,7 @@ Run in order:
 - Parquet IO requires `pyarrow` (already pinned).
 - R notebooks require `IRkernel` if run in Jupyter.
 - Stata notebook can be run in Stata directly or using a Jupyter kernel configured for Stata.
+- The matching and clustering step requires large memory, typically need memory of 64GB or larger for the whole patent dataset.
 
 ## License
 
