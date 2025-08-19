@@ -5,21 +5,23 @@ This repo provides notebooks to (i) identify green/CCMT patent families via CPC 
 ## Requirements
 
 - **OS**: Linux / macOS / Windows (WSL2 recommended on Windows)
-- **Python**: 3.12 (see `requirements.txt` for pinned packages)
-- **R** (for `5.3_entry_reg_R.ipynb`, `7.3_complement_reg_R.ipynb`)
+- **Python**: 3.11 (see `requirements.txt` for pinned packages)
+- **R**: 4.4.3 (for `5.3_entry_reg_R.ipynb`, `7.3_complement_reg_R.ipynb`)
 - Optional:  **Stata** (for `5.4_marginplot_stata.ipynb`).
 
 Install with conda:
 ```bash
-conda create -n gbb python=3.12 -y
+conda create -n gbb python=3.11 -y
 conda activate gbb
-conda install r r-irkernel
+conda install r=4.4.3 r-irkernel
 pip install -r requirements.txt
 ```
 
+Typical install time on a normal desktop: 10–25 minutes (most time is Python wheel downloads; nmslib may compile on some platforms; Windows+WSL2 is faster/more reliable).
+
 ## Quickstart (demo)
 
-A tiny demo dataset is in `sampledata/`:
+A tiny demo dataset is in `sampledata/`, which are not real patents but generated data of similar structure.
 
 ```
 sampledata/
