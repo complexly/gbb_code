@@ -1,0 +1,14 @@
+# Install the core requirements first. These full-data/model steps were not run here.
+# Clustering, CPC projection and ANN versions from the original requirements:
+scikit-learn==1.4.2
+gensim==4.3.3
+hdbscan==0.8.36
+umap-learn==0.5.6
+nmslib==2.1.2  # 2.1.1 declares an incompatible NumPy <1.17 requirement
+
+# Alternative text encoding and explicit optional API calls.
+# The original runtime pins were not recovered; these are dependency names,
+# not a verified reproduction environment. Model snapshot commits are in notebook 04.
+sentence-transformers
+torch
+openai

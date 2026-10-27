@@ -1,0 +1,24 @@
+# Local source data, baseline intermediates and results.
+/data/
+/outputs/
+/patstat/
+/patent_text/
+/*.parquet
+/*.npy
+/*.npz
+/*.bin
+/*.bin.dat
+
+# Intermediates and results generated in the new folders.
+/dataprep/data/
+/dataprep/outputs/
+/revision_notebooks/data/
+/revision_notebooks/outputs/
+
+# Local environments, credentials and notebook caches.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*

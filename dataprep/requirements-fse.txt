@@ -1,0 +1,5 @@
+# dataprep/01 only. Install after the core scientific requirements.
+# Maintained FSE build preserves Average/IndexedList and PARANMT-300 APIs.
+# The PyPI 1.0.0 build fails with current isolated build tooling.
+# Building this pinned source needs Git and a C compiler.
+fse @ git+https://github.com/oborchers/Fast_Sentence_Embeddings.git@ec1182e53573d389b8dd19b3e402d116ac218b6b
