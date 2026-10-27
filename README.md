@@ -57,9 +57,9 @@ Before rebuilding the baseline:
   generate the four-field validation scores. Root 1 uses the title/abstract
   vectors for the baseline matches.
 - Use dataprep 02 to train CPC2vec before root 2 and the clustering notebooks.
-- Root 3.1 saves the full family/code table; root 3.1/3.2 save their naming
+- Root folder notebook 3.1 saves the full family/code table; root 3.1/3.2 save their naming
   inputs directly for root 3.3.
-- [Root 1.2](1.2_descriptive_and_country_inputs.ipynb) follows matching and
+- Root folder notebook 1.2 follows matching and
   supplies descriptive calculations and the country table for root 6.
 - Revision notebook 08 includes orthogonal extraction and its comparison with
   the discrete GBBs.
